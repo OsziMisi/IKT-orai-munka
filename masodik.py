@@ -20,3 +20,4 @@ cimke = Label(ablak1,
             compound = "center").pack()
 
 ablak1.mainloop()
+sf
