@@ -10,8 +10,8 @@ def masodikalbalak():
     abalak2.minsize(width = 410, height=200)
     
     #widgwt
-    szam1 = Label(abalak2, Text= 'Felszine')
-    szam2 = Label(abalak2, Text = 'terfogata')
+    szam1 = Label(abalak2, text= 'Felszine')
+    szam2 = Label(abalak2, text = 'terfogata')
     m1 = Entry(abalak2)
     m2 = Entry(abalak2)
     
@@ -37,10 +37,10 @@ def masodikalbalak():
     
 #widgetek kiszanolasa
 
-szoveg1 = Label(abalak1, Text= 'a?')
-szoveg2 = Label ( abalak1, Text= 'b?')
-szoveg3 = Label ( abalak1, Text= 'c?')
-gomb1 = Button(abalak1, Text= 'Kiszamitas',command = ujablak)
+szoveg1 = Label( abalak1, text= 'a?')
+szoveg2 = Label ( abalak1, text= 'b?')
+szoveg3 = Label ( abalak1, text= 'c?')
+gomb1 = Button(abalak1, text= 'Kiszamitas',command = masodikalbalak)
 mezo1 = Entry(abalak1)
 mezo2 = Entry(abalak1)
 mezo3 = Entry(abalak1)
