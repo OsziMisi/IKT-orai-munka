@@ -35,10 +35,37 @@ szoveg3.grid(row =3)
 szoveg4.grid(row =5)
 gombl.grid(row-4, column-2, sticky
 mezo2.grid(row-2, column=2, sticky =W)
-=W) mezol.grid(row =1, column =2, sticky =W)
+mezol.grid(row =1, column =2, sticky =W)
 mezo3.grid(row =3, column=2, sticky =W)
 mezo4.grid(row =5, column -2, sticky =W)
 abl3.mainloop
 #Felszín ablak vége
-#Térfogat ablak def terfogat:
 
+#Térfogat ablak 
+
+def terfogat:
+    def szamit():
+        a = eval(mezo1.get())
+        b = eval(mezo2.get())
+        c = eval(mezo3.get())
+        terfogat = a*b*c
+        mezo4.delete(0, END)
+        mezo4.insert(0,str(terfogat))
+        
+    abl3 = Toplevel(foablak)
+    abl3.title(' A teglatest terfogata')
+    abl3.minsize(width = 300, height = 200)
+    szoveg1 = Label(abl3, text = 'a')
+    szoveg2 = Label(abl3, text = 'b')
+    szoveg3 = Label(abl3, tetx = 'c')
+    szoveg4 =Label(abl3, text = 'Eredmeny') 
+    gomb1 = Button(abl3, text = 'Szamitani', command = szamit)
+    mezo1 = Entry(abl3)
+    mezo2 = Entry(abl3)
+    mezo3 = Entry(abl3)
+    mezo4 = Entry(abl3)
+    szoveg1.grid(row = 1)
+    szoveg2.grid(row = 2)
+    szoveg3.grid(row = 3)
+    szoveg4.grid(row = 4)
+    
